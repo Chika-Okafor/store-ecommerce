@@ -1,11 +1,12 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material';
 import React, { useState } from 'react';
-import { ApiSlides } from '../componentApi/SliderApi';
+import { SlidesList } from '../APIComponents/SliderAPI';
 import '../index.css';
 
 const Hero = () => {
     //-----------------------Component Styles---------------------------------
     const arrowStyles = 'rounded-full bg-grey flex justify-center items-center shadow-md hover:cursor-pointer border-[1px] ml-[20px] mr-[20px]';
+    const slideIndicators = document.getElementsByClassName("slideIndicators");
 
     //-----------------------Component Styles---------------------------------
     const nextSlide = () => {
@@ -26,11 +27,11 @@ const Hero = () => {
 
 
     //-----------------------useState Hooks---------------------------------
-    const [slides] = useState(ApiSlides);
+    const [slides] = useState(SlidesList);
     const [currentSlide, setNewSlide] = useState(0);
 
     return (
-        <div className='hero-wrapper h-[540px] bg-[#ffffff] flex items-center justify-between shadow-2xl w-[100%] border-[1px]'>
+        <div className='hero-wrapper h-[540px] bg-[#ffffff] flex items-center justify-between shadow-2xl w-[100%] mb-[30px] border-[1px]'>
             
             {/*-----------------------Toggle Left Button----------------------*/}
             <div className={arrowStyles} onClick={previousSlide}>
@@ -41,7 +42,7 @@ const Hero = () => {
             {slides.map((slide, index) => {
                 if (index === currentSlide) {
                     return (
-                        <div className='hero flex w-[100%] h-[100%] justify-center items-center flex-wrap rounded-lg relative bg-[#ffffff]'>
+                        <div key={index} className='hero flex w-[100%] h-[100%] justify-center items-center flex-wrap rounded-lg relative bg-[#ffffff]'>
                             <div className='slide flex items-center justify-between h-[100%] w-[100%]'>
                                 <div className='hero-image flex flex-1 justify-center items-center h-[100%] w-[40%]'>
                                     <img className='h-[100%] object-cover' src={slide.src} alt='hero-mage' />
@@ -53,10 +54,10 @@ const Hero = () => {
                                 </div>
                             </div>
                             <div className='slide-indicator w-[100%] h-[15px] border-[5px] bg-[#ffffff] flex justify-center items-center'>
-                                <div className='h-[100%] w-[25%] bg-[#000000]'></div>
-                                <div className='h-[100%] w-[25%]'></div>
-                                <div className='h-[100%] w-[25%]'></div>
-                                <div className='h-[100%] w-[25%]'></div>
+                                <div className='slideIndicators h-[100%] w-[25%] bg-[#000000]'></div>
+                                <div className='slideIndicators h-[100%] w-[25%]'></div>
+                                <div className='slideIndicators h-[100%] w-[25%]'></div>
+                                <div className='slideIndicators h-[100%] w-[25%]'></div>
                             </div>
                         </div>
                     );
