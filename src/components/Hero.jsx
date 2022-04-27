@@ -54,7 +54,7 @@ const Hero = () => {
                                 </div>
                             </div>
                             <div className='slide-indicator w-[100%] h-[15px] border-[5px] bg-[#ffffff] flex justify-center items-center'>
-                                <div className='slideIndicators h-[100%] w-[25%] bg-[#000000]'></div>
+                                <div className='slideIndicators h-[100%] w-[25%] rounded-lg bg-[#000000]'></div>
                                 <div className='slideIndicators h-[100%] w-[25%]'></div>
                                 <div className='slideIndicators h-[100%] w-[25%]'></div>
                                 <div className='slideIndicators h-[100%] w-[25%]'></div>
