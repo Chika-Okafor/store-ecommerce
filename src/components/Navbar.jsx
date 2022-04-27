@@ -19,8 +19,8 @@ const Navbar = () => {
                     <div className='language cursor-pointer text-[16px]'>
                         En
                     </div>
-                    <div className='search-bar flex border-[2px] border-solid border-lightgrey rounded-md items-center ml-[10px] p-[5px] focus-within:border-[#8a4af3] transition-all'>
-                        <input className='search-input outline-none' type="text" />
+                    <div className='search-bar flex border-[2px] border-solid border-lightgrey rounded-md items-center ml-[10px] p-[5px] w-[60%] focus-within:border-[#8a4af3] transition-all'>
+                        <input className='search-input outline-none w-[100%]' type="text" />
                         <Search className='' fontSize='small'/>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
                     <div className={navMenuStyles}>Register</div>
                     <div className={navMenuStyles}>Log in</div>
                     <div className={navMenuStyles}>
-                        <Badge badgeContent={2} color='primary'>
+                        <Badge badgeContent={0} color='primary'>
                             <ShoppingCartOutlined />
                         </Badge>
                     </div>
