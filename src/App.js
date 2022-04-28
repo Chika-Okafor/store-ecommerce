@@ -1,10 +1,11 @@
 import Home from "./pages/Home";
+import Shop from "./pages/Shop";
 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Home />
+      <Shop />
     </div>
   );
 }

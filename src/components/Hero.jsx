@@ -48,8 +48,8 @@ const Hero = () => {
                                     <img className='h-[100%] object-cover' src={slide.src} alt='hero-mage' />
                                 </div>
                                 <div className='hero-text flex flex-col flex-1 place-items-start justify-center ml-[11]  w-[60%]'>
-                                    <p className='text-[32px]'>{slide.content.p}</p>
-                                    <h2 className='text-[55px] mt-[15px] mb-[50px]'>{slide.content.h2}</h2>
+                                    <h2 className='text-[55px]'>{slide.content.h2}</h2>
+                                    <p className='text-[32px] mt-[15px] mb-[50px]'>{slide.content.p}</p>
                                     <button className='btn'>Shop now</button>
                                 </div>
                             </div>

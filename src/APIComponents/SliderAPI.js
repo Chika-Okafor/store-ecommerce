@@ -29,8 +29,8 @@ export const SlidesList = [
     src: 'https://media.istockphoto.com/photos/set-of-feminine-tourist-summer-clothing-isolated-on-white-picture-id474872792?k=20&m=474872792&s=612x612&w=0&h=lITZnwoNUHm_5k1drzHTCICO-PR8PtRV8Tm5E3A07dg=',
     active: true,
     content: {
-      p: "Just in time for Summer!",
-      h2: "Holiday Shopping?",
+      p: "Our Best Packing Tips Yet!",
+      h2: "Summer Holidays",
     },
     background: ' bg-[#fffff]'
   }
