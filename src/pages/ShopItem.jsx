@@ -1,22 +1,20 @@
 import React from 'react';
 import Announcement from '../components/Announcement';
-import Filters from '../components/Filters';
 import Footer from '../components/Footer';
+import Itemdescription from '../components/ItemDescription';
 import Navbar from '../components/Navbar';
 import Newsletter from '../components/Newsletter';
-import Products from '../components/products/Products';
 
-const Shop = () => {
+const Shopitem = () => {
     return (
-        <div className=''>
+        <div>
             <Navbar />
             <Announcement />
-            <Filters />
-            <Products />
+            <Itemdescription />
             <Newsletter />
             <Footer />
         </div>
     );
 }
 
-export default Shop;
+export default Shopitem;

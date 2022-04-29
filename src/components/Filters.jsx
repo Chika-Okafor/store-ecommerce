@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Filter = () => {
+const Filters = () => {
     return (
         <div className='flex flex-col p-5'>
             <h1 className='text-[30px]'>Men</h1>
@@ -34,4 +34,4 @@ const Filter = () => {
     );
 }
 
-export default Filter;
+export default Filters;
