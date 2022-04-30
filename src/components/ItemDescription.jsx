@@ -1,18 +1,18 @@
 import React from 'react';
 import Counter from './Counter';
 
-const Itemdescription = () => {
+const ItemDescription = () => {
     const colorOptionStyles = 'w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-silver hover:border-4';
     return (
-        <div className='flex justify-center'>
+        <div className='flex justify-center item-center pl-20 pr-20'>
             <div className='flex flex-1 items-center justify-center'>
                 <img src='https://cdn.shopify.com/s/files/1/0240/7285/products/KNITPULLOVER-PISTACHIO-2_360x.jpg?v=1642545216' alt='Product Image' className='w-[80%] h-[80%] rounded-lg shadow-lg hover:scale-[1.2]' />
             </div>
-            <div className='flex flex-[1.3] items-start justify-items-start flex-col mt-10'>
+            <div className='flex flex-1 items-start justify-start flex-col p-20'>
                 <h1 className='title text-[40px]'>Cream Hoodie 100% Original Cotton</h1>
                 <p className='pr-[4rem] text-justify mt-4 '>Demonstrate the ability to formulate and evaluate an innovation strategy for a new technology-based product or service venture. Identofy and evaluate the impact of a future disruptive innovation affecting the selected organisation.</p>
-                <p className='mt-7 text-3xl'>Price: <b>£70</b></p>
-                <div className='flex text-2xl mt-7'>
+                <p className='mt-7 text-3xl font-semibold'>£<span>70</span></p>
+                {/*<div className='flex text-2xl mt-7'>
                     Colour
                     <div className={colorOptionStyles + ` bg-red-600`}></div>
                     <div className={colorOptionStyles + ` bg-green-600`}></div>
@@ -26,7 +26,7 @@ const Itemdescription = () => {
                         <option value="">Medium</option>
                         <option value="">Large</option>
                     </select>
-                </div>
+                </div>*/}
                 <div className='mt-5'>
                     <Counter />
                 </div>
@@ -36,4 +36,4 @@ const Itemdescription = () => {
     );
 }
 
-export default Itemdescription;
+export default ItemDescription;

@@ -24,9 +24,6 @@ const Product = ({product}) => {
                 <div className={iconStyles}>
                     <FavoriteBorderOutlined />
                 </div>
-                <div className={iconStyles}>
-                    <SearchOutlined />
-                </div>
             </div>
         </div>
     );

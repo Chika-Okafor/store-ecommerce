@@ -1,12 +1,10 @@
 import React from 'react';
 import { ProductsSrc } from '../../APIComponents/TopProductsAPI';
-import Headline from '../Headline';
-import Product from './Product';
+import Product from '../products/Product';
 
-const Products = () => {
+const ShopItems = () => {
     return (
-        <div className='flex flex-col items-center justify-center pt-[50px] mt-5 mb-20'>
-            <Headline headline='Top Sellers' />
+        <div className='flex items-center justify-center w-[100%] mt-5 mb-10'>
             <div className='flex flex-wrap items-center justify-center w-[80%]'>
                 {
                     ProductsSrc.map((product, index) => {
@@ -20,4 +18,4 @@ const Products = () => {
     );
 }
 
-export default Products;
+export default ShopItems;

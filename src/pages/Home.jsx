@@ -6,12 +6,14 @@ import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
+import BreadCrumbs from '../components/BreadCrumbs';
 
 const Home = () => {
     return (
         <div>
             <Navbar />
             <Announcement />
+            <BreadCrumbs pageCrumbs='Home' />
             <Hero />
             <Categories />
             <Products />

@@ -1,7 +1,8 @@
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
+import Login from "./pages/LogIn";
+import ProductDescription from "./pages/ProductDescription";
 import Shop from "./pages/Shop";
-import Shopitem from "./pages/ShopItem";
 
 
 const App = () => {

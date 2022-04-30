@@ -11,7 +11,7 @@ const Announcement = () => {
     return (
         <div className={announcementStyles}>
             <h2>Hurry! Get up to 40% off this summer!!</h2>
-            <Close className='cursor-pointer fixed right-[20px]' onClick= {handleClose}/>
+            <Close className='cursor-pointer absolute right-[20px]' onClick= {handleClose}/>
         </div>
     );
 }

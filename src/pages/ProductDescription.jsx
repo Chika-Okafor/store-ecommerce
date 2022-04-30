@@ -1,20 +1,22 @@
 import React from 'react';
 import Announcement from '../components/Announcement';
+import BreadCrumbs from '../components/BreadCrumbs';
 import Footer from '../components/Footer';
-import Itemdescription from '../components/ItemDescription';
+import ItemDescription from '../components/ItemDescription';
 import Navbar from '../components/Navbar';
 import Newsletter from '../components/Newsletter';
 
-const Shopitem = () => {
+const ProductDescription = () => {
     return (
         <div>
             <Navbar />
             <Announcement />
-            <Itemdescription />
+            <BreadCrumbs pageCrumbs='Home - Shop - Product Description' />
+            <ItemDescription />
             <Newsletter />
             <Footer />
         </div>
     );
 }
 
-export default Shopitem;
+export default ProductDescription;

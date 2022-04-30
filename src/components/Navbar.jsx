@@ -1,4 +1,4 @@
-import { Search, ShoppingCartOutlined } from '@mui/icons-material';
+import { FavoriteBorder, Search, ShoppingCartOutlined } from '@mui/icons-material';
 import { Badge } from '@mui/material';
 import React from 'react';
 
@@ -27,8 +27,12 @@ const Navbar = () => {
 
                 {/*------------------------NAV MENU-------------------------------*/}
                 <div className='right flex flex-1 items-center justify-end'>
-                    <div className={navMenuStyles}>Register</div>
-                    <div className={navMenuStyles}>Log in</div>
+                    <div className={navMenuStyles + ` text-[1.1rem] font-semibold`}>Shop</div>
+                    <div className={navMenuStyles}>
+                        <Badge badgeContent={0} color='primary'>
+                            <FavoriteBorder />
+                        </Badge>
+                    </div>
                     <div className={navMenuStyles}>
                         <Badge badgeContent={0} color='primary'>
                             <ShoppingCartOutlined />

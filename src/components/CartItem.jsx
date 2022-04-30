@@ -3,7 +3,7 @@ import CounterButtons from './CounterButtons';
 
 const CartItem = () => {
     return (
-        <div className='flex border-b-2 w-[100%] bg-[#f1f1f1] m-2 rounded-md'>
+        <div className='flex border-b-2 w-[100%] bg-[#f1f1f1] mb-3 rounded-md'>
             <div className='flex w-[60%] h-auto items-center justify-start rounded-md'>
                 <div className='product flex self-start pl-5'>
                     <img src="https://cdn.shopify.com/s/files/1/0240/7285/products/KushJonesLST-ShirtinBlack09_360x.jpg?v=1642719733" alt="Product Image" className='w-[7rem] h-[80%] rounded-lg shadow-lg hover:scale-[1.1] m-3' />
